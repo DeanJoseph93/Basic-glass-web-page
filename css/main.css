@@ -1,0 +1,627 @@
+/* =====================   CSS RESET SECTION ==== */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+html, body{
+    width: 100%;
+    height:100%;
+}
+
+.clearFix {
+    clear: both;
+}
+
+/* // General Section of Website*/
+
+body{
+    background-image: url("../Images/favicon.jpg");
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsteelblue;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ======================================================================= Header Section of Site*/
+
+/*.salemLogo {
+    float: left;
+    margin-top: 0px;
+    margin-right: 20px;
+
+}*/
+
+.companyName {
+    float: left;
+    margin-top: 10px;
+}
+
+.companyName h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    color: #333;
+}
+
+
+
+
+.navBar {
+    width: 100%;
+    background-color: steelblue;
+    z-index: 998;
+
+}
+
+
+nav.navBar ul{
+    /*list-style: cjk-ideographic;
+    list-style-image: url("../imgs/thumbs/1_235x237.jpg");*/
+    /* vendor prefixes for css3 properties:
+        -webkit-property     =>     chrome and safari
+        -moz-property        =>     mozilla firefox
+        -ms-property         =>     IE9+
+        -o-property          =>     opera
+        property             => unprefixed property
+    */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+
+.navBar a{
+    font-family:'Rubik', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 20px 30px;
+    display: block;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: lightsteelblue;
+}
+
+
+
+
+.navBar a:hover{
+    background-color: aliceblue;
+}
+
+
+.movingBtn:active{
+    position: relative;
+    top:1px;
+
+}/*/ Group all buttons*/
+
+.topContainer {
+    background-color: steelblue;
+    padding: 30px 0 30px;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    text-align: left;
+}
+
+
+.search {
+    /*position: relative;
+    z-index: 999;
+    top: 20px;
+    right: 10px;*/
+    float: right;
+    margin-top: 13px;
+}
+
+
+.search input{
+    color: #333;
+}
+
+.search button{
+    font-family: 'Taviraj', serif;
+    background-color: lightsteelblue;
+    color: #333;
+}
+
+.search input, .search button {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 0 24px;
+    border: none;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/*.headerTop {
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+
+.headerPic {
+    width: 213px;
+    float: right;
+
+}
+
+.headerPic img{
+    border-radius: 6%;
+}
+
+.headerText {
+    width: 575px;
+    float: right;
+    margin: -5px 75px;
+    color: #333;
+}
+
+.headerText h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 49px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #333;
+}*/
+
+
+.bannerHead {
+    margin: 0 auto;
+}
+
+
+#banner {
+    position: relative;
+    /*background-image: url("../Images/myrtle-beach-glass-company-main-image.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    background-size: cover;
+    width: 100%;
+}
+
+
+#galleryBull{
+    position: absolute;
+    top: 232px;
+    right: 45px;
+}
+
+.bulletPoint{
+    width: 24px;
+    height: 21px;
+    border-radius: 50%;
+    /*float: left;*/
+    background-color: #333333;
+    opacity: .9;
+    /*margin-right: 23px;*/
+    margin: 17px 8px;
+    cursor: pointer;
+}
+
+.bulletPoint:hover{
+    background-color: #ffffff;
+
+}
+
+.headerText p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: right;
+    margin: 25px 180px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* ======================================================================= Main Section of Website*/
+
+
+.mainTop {
+    background-color: lightsteelblue;
+    margin-top: 20px;
+}
+
+.mainTop h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+.mainTop p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: .5px;
+    word-spacing: 1.5px;
+    line-height: 20px;
+    color: #333;
+    margin: 15px 0;
+}
+
+
+.picRight{
+    float: right;
+    margin-left: 15px;
+}
+
+
+.mainBottom {
+    background-color: lightsteelblue;
+    margin-top: 20px;
+}
+
+.mainBottom h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    color: #333;
+    margin-top: 75px;
+    border-top: 2px dotted steelblue;
+    padding-top: 35px;
+}
+
+.smallPar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333;
+    margin-top: 30px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.containerTeam {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.mainTopTeam {
+    margin-top: -35px;
+}
+
+.mainTopTeam h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* =====================  FOOTER  SECTION ==== */
+
+footer{
+    background-color: steelblue;
+    color: #333;
+    padding: 30px 0 25px;
+    margin-top: 85px;
+}
+
+.site-footer_section{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 17px;
+    padding-bottom: 13px;
+}
+.site-footer_left_list{
+    color:#333;
+
+
+}
+.site-footer_left{
+    border-top: 2px solid lightsteelblue;
+    padding: 0px 0 0 2em;
+    margin-bottom: 20px;
+    line-height: 25px;
+    display: table-cell;
+    width: 1.7%;
+    padding-bottom: 20px;
+}
+
+li {
+    color:#333;
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+/*======================= Gallery Section ========= */
+
+
+.containerGallery {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.mainTopGallery {
+    background-color: lightsteelblue;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.underlined {
+
+}
+
+main h4 {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+    text-transform: capitalize;
+
+
+}
+
+.galleryContent p{
+    text-align: justify;
+    letter-spacing: .5px;
+    word-spacing: 1.5px;
+    line-height: 20px;
+    color: #333;
+    margin: 15px 0;
+}
+
+.galleryHolder{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+.galleryHolder img{
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 3px #333;
+    /*css3 rounded corners*/
+    border-radius: 6px;
+}
+
+
+.galleryContent p{
+    margin: 25px 0;
+
+}
+
+/*=========================================================  Contact Section*/
+
+.entry-content address, .comment-content address {
+    display: block;
+    line-height: 1.714285714;
+    color: #333333;
+}
+
+.entry-content {
+    width: 400px;
+    float: left;
+
+}
+
+.content-right {
+    width: 470px;
+    float: right;
+}
+
+
+
+
+/*
+
+
+/*
+http://www.windowglass.co.uk/contact-us/*/
+
+
+/*-------------------------------
+Products Section
+-------------------------------*/
+
+.containerProd {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+.mainTopProducts {
+    background-color: lightsteelblue;
+    margin-top: 20px;
+}
+
+.mainTopProducts h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+.mainTopProducts p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 60px;
+    color: #333;
+}
+
+.flexCont {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: -29px -49px 0px -3px;
+}
+
+
+
+.smallCol {
+    float: left;
+    width: 190px;
+    margin-right: 50px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+
+
+.smallCol h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    color: #333;
+    padding-top: 10px;
+    border: 2px solid steelblue;
+    background-color: steelblue;
+}
+
+
+.addBtn {
+    border: 2px solid steelblue;
+    background-color: steelblue;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 190px;
+    height: 30px;
+    color: #333;
+}
+
+
+.contactBtn {
+    border: 2px solid steelblue;
+    background-color: steelblue;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 190px;
+    height: 30px;
+    color: #333;
+}
+
+/*-------------------------------
+Log Section
+-------------------------------*/
+
+
+.containerLog {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+.mainTopLog {
+    background-color: lightsteelblue;
+    margin-top: 20px;
+}
+
+
+
+.mainTopLog h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+.mainTopLog p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 60px;
+    color: #333;
+}
+
+
+
+
+.logSection {
+    margin-top: 0px;
+}
+
+
+.email_entry input {
+    width: 477px;
+    margin-top: 20px;
+}
+
+.email_entry input, textarea {
+    background-color: #ffffff;
+    border: solid 2px steelblue;
+    border-radius: 3px;
+    color: #333;
+    font-size: 15px;
+    margin-left: 58px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+
+
+.password_form input {
+    width: 476px;
+    margin-top: 20px;
+}
+
+.password_form input, textarea {
+    background-color: #ffffff;
+    border: solid 2px steelblue;
+    border-radius: 3px;
+    color: #333;
+    font-size: 15px;
+    margin-left: 29px;
+    padding: 15px;
+}
+
+
+.btnSub {
+    border: 2px solid steelblue;
+    background-color: steelblue;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 190px;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 108px;
+    border-radius: 10px;
+    font-weight: 700;
+}
